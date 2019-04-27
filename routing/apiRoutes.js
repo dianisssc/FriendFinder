@@ -1,6 +1,5 @@
 var path = require("path");
 var friends = require("../data/friends");
-
 module.exports = function(app){
 
     app.get('/api/friends', function(req, res){
@@ -9,7 +8,7 @@ module.exports = function(app){
     });
 
     app.post("/api/new", function(req, res) {
-      //setup variables for finding match
+      
         var newFriend = req.body;
         var newScore = newFriend.scores;
         var total = 0;
